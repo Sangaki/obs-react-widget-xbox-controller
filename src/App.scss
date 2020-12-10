@@ -1,0 +1,156 @@
+html {
+    width: 733px;
+    height: 515px;
+}
+
+html, body, div {
+    background-color: transparent;
+}
+
+.gamepad__wrapper {
+    position: relative;
+
+    img.main-schema {
+        width: 100%;
+        height: auto;
+    }
+
+    .pressed-buttons__wrapper {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 1000;
+
+        img.a-pressed-btn-false,
+        img.b-pressed-btn-false,
+        img.x-pressed-btn-false,
+        img.y-pressed-btn-false,
+        img.left-tr-pressed-btn-false,
+        img.right-tr-pressed-btn-false,
+        img.back-pressed-btn-false,
+        img.start-pressed-btn-false,
+        img.up-pressed-btn-false,
+        img.down-pressed-btn-false,
+        img.left-pressed-btn-false,
+        img.right-pressed-btn-false,
+        {
+            display: none;
+        }
+
+        img[class*="a-pressed-btn"] {
+            position: absolute;
+            top: 178px;
+            right: 157px;
+        }
+
+        img[class*="b-pressed-btn"] {
+            position: absolute;
+            top: 129px;
+            right: 108px;
+        }
+
+        img[class*="x-pressed-btn"] {
+            position: absolute;
+            top: 129px;
+            right: 208px;
+        }
+
+        img[class*="y-pressed-btn"] {
+            position: absolute;
+            top: 81px;
+            right: 158px;
+        }
+
+        img[class*="left-tr-pressed-btn"] {
+            position: absolute;
+            top: 8px;
+            left: 111px;
+        }
+
+        img[class*="right-tr-pressed-btn"]  {
+            position: absolute;
+            top: 10px;
+            right: 112px;
+        }
+
+        img[class*="back-pressed-btn"]  {
+            position: absolute;
+            top: 139px;
+            left: 299px;
+        }
+
+        img[class*="start-pressed-btn"]  {
+            position: absolute;
+            top: 139px;
+            right: 300px;
+        }
+
+        img[class*="up-pressed-btn"]  {
+            position: absolute;
+            top: 217px;
+            left: 254px;
+        }
+
+        img[class*="down-pressed-btn"]  {
+            position: absolute;
+            top: 287px;
+            left: 255px;
+        }
+
+        img[class*="left-pressed-btn"]  {
+            position: absolute;
+            top: 253px;
+            left: 220px;
+        }
+
+        img[class*="right-pressed-btn"]  {
+            position: absolute;
+            top: 252px;
+            left: 290px;
+        }
+
+        .left-stick-wrapper {
+            position: absolute;
+            top: 121px;
+            left: 152px;
+
+            img.left-stick {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        .right-stick-wrapper {
+            position: absolute;
+            top: 231px;
+            right: 306px;
+
+            img.right-stick {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        .left-trigger {
+            position: absolute;
+            top: 0;
+            left: 10px;
+            transform-origin: bottom right;
+        }
+
+        .right-trigger {
+            position: absolute;
+            top: 0;
+            right: 10px;
+            transform-origin: bottom left;
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}
